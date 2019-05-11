@@ -13,10 +13,10 @@ header {
 
 main {
   display: flex;
+  flex-flow: row wrap;
   background-color: #92C9D5;
   width: 100%;
   height: 100%;
-  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -44,6 +44,10 @@ footer {
 }
 
 .setWidth {
-  flex-basis: 100px;
-  flex-grow: 1;
+  /* flex: <flex-grow value> <flex-shrink value> <flex-basis value> */
+  flex: 1 0 100px;
+}
+
+.setAlign {
+  align-self: flex-end;
 }
