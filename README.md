@@ -1,5 +1,5 @@
-# Building a Responsive Layout with CSS Flexbox 
-## Problem Statement 
+# Building a Responsive Layout with CSS Flexbox
+## Problem Statement
 Using CSS to create a website that looks good to as many users as possible can
 be a challenge. Your webpage may look great on the screen you designed it on,
 but if you open the page up on a small laptop, suddenly the page content is
@@ -70,14 +70,14 @@ and bottom of our page. We'll need to add one more line of CSS for this using
 
 By default, flexbox will display content horizontally. If we want to change
 this, we'll need to define a direction. In `index.css`, add the following line
-to `.flex-container`: 
+to `.flex-container`:
 
 ```
 flex-direction: column;
 ```
 
 Refresh `index.html` to see the change. This time, our ivory `<header>` appears
-along the top of our page, with `<footer>` at the bottom! 
+along the top of our page, with `<footer>` at the bottom!
 
 The `flex-direction` property has a few setting options:
 
@@ -105,7 +105,7 @@ height. Similarly, footers usually contain static links and information, so we w
 set the height property in the `header` and `footer` CSS blocks to `80px`.
 
 Refresh the page and you'll see the effect: The `<main>` section will display as
-turqoise and tke up the majority of the page. If you shrink the height of your browser
+turqoise and take up the majority of the page. If you shrink the height of your browser
 window, the height of `<main>` will change significantly. Our `<header>` and
 `<footer>` sections will still adjust in height a little, but we'll take a look
 at preventing that later on. Previously, to create this sort of layout, we would
@@ -154,7 +154,7 @@ main {
 
 If you refresh, you should see six pink boxes horizontally aligned. If you reduce
 the width of your browser window, these boxes will evenly shrink to fit. Go back
-into `index.css`, and in `.main`, add the following line:
+into `index.css`, and in `main`, add the following line:
 
 ```
 flex-wrap: wrap;
@@ -215,9 +215,9 @@ set up in short order.
 The `justify-content` property has a number of settings:
 
 * `center` - centers all elements while preserving the original spacing in-between
-each of them. 
+each of them.
 * `flex-start` - aligns all elements to the beginning of the container. This is
-the default setting, so we've actually already seen what this looks like. 
+the default setting, so we've actually already seen what this looks like.
 * `flex-end` - aligns all elements to the end of the flex container. If you apply
 this setting, our pink boxes will align to the right side of the screen.
 However, if the page shrinks, the last flex elements will still wrap to the next
@@ -240,7 +240,7 @@ same way, _only vertically_, so `justify-content` will apply based on the
 Centering vertically is actually fairly non-intuitive using basic CSS. Flexbox
 provides a solution, though, in the `align-items` property. In the `main` CSS
 block, make sure `flex-flow` is set to `row wrap` once again, and then add the
-following line: 
+following line:
 ```
 align-items: center;
 ```
@@ -264,7 +264,7 @@ settings:
 * `baseline` - aligns elements based on the _text_ baseline inside each element. If you tried out the `stretch` setting, make sure your `flex-direction` is set back to `row` and that both `height` and `width` are set to `100px` in the `.item` CSS block. Now, set `align-items` to `baseline`, go to your `index.html` file and remove some of the numbers that are contained in our divs, leaving a few. Save both the HTML and CSS, and check out the page in your browser. Any div that is now empty is aligned normally, but any div that still has text in it will align _based on the bottom of the text_.
 
 To perfectly center an element horizontally and vertically, with flex, we can
-use a combination of both `justify-content` and `align-items` like so: 
+use a combination of both `justify-content` and `align-items` like so:
 
 ```
 justify-content: center;
