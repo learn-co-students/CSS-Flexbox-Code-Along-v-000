@@ -8,6 +8,7 @@ header {
   background-color: #FBFFF4;
   height: 80px;
   width: 100%;
+  flex: auto;
 }
 
 main {
@@ -15,7 +16,7 @@ main {
   background-color: #FBFFF4;
   width: 100%;
   height: 100%;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
@@ -24,6 +25,7 @@ footer {
   background-color: #DAEEEF;
   height: 80px;
   width: 100%;
+  flex: auto;
 }
 
 .flex-container {
@@ -38,4 +40,8 @@ footer {
   width: 100px;
   margin: 5px;
   background-color: #FCF2EC;
+}
+
+.setWidth {
+ flex: auto
 }
