@@ -9,7 +9,7 @@ on a larger monitor, you might see excess empty space.
 However, CSS has some powerful solutions for this. In this lesson we will
 be discussing one of them: flexbox.
 
-Flexbox makes it easier to build page layouts that are dynamic. As the
+Flexbox makes it easier to buildpage layouts that are dynamic. As the
 designer of a web page, you can designate some parts of your page to
 automatically resize depending on window size, filling empty space in a way that
 you specify. It is also very useful for displaying columns or rows of items,
